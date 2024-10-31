@@ -1,6 +1,7 @@
 package com.example.task04;
 
 import java.io.IOException;
+import java.util.Scanner;
 
 public class Task04Main {
     public static void main(String[] args) throws IOException {
@@ -9,6 +10,13 @@ public class Task04Main {
         // - запустить программу
         // - проверить, что получилось 351.731900
 
-        System.out.println("0.0");
+        double result = 0;
+
+        Scanner scanner = new Scanner(System.in);
+
+        while (scanner.hasNextDouble()){
+            result += scanner.nextDouble();
+        }
+        System.out.println(Math.round(result));
     }
 }
